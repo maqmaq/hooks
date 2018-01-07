@@ -9,7 +9,7 @@ fi
   file=${file}
   if [[ $file = *.php ]];
   then
-    $fixer_path fix "$file" --rules=@PSR2,blank_line_before_statement,no_extra_consecutive_blank_lines
+    $fixer_path fix "$file" --rules=@PSR2,blank_line_before_statement,no_extra_consecutive_blank_lines,ordered_class_elements
     git add "$file"
   fi
 done < <(git diff --name-only --cached --diff-filter=ACMRTUXB)
