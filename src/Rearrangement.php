@@ -26,23 +26,23 @@ class Rearrangement
     {
     }
 
-    public function __destruct()
-    {
-    }
-
-    public function __call($name, $arguments)
-    {
-    }
-
     public static function publicStaticFunction()
     {
     }
-    
+
     protected static function protectedStaticFunction()
     {
     }
 
     private static function privateStaticFunction()
+    {
+    }
+
+    public function __destruct()
+    {
+    }
+
+    public function __call($name, $arguments)
     {
     }
 
