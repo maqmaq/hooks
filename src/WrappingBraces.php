@@ -4,6 +4,7 @@ namespace A {
 
     function foo()
     {
+        
         return 0;
     }
 
