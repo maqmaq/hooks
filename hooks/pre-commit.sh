@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo 'PRE COMMIT';
+exit 0;
+
+
 fixer_path = 'vendor/bin/php-cs-fixer'
 if ! [[ -x $fixer_path ]]; then
         echo "ERROR Fixer is not executable, please run composer"
