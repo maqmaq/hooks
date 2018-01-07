@@ -4,9 +4,6 @@ namespace A {
 
     function foo()
     {
-
-
-        
     }
 
     function bar(

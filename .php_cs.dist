@@ -21,7 +21,7 @@ return PhpCsFixer\Config::create()
                     "method_public",
                     "method_protected_static",
                     "method_protected",
-                    "method_private_static"
+                    "method_private_static",
                     "method_private",
                 ]
         ],
