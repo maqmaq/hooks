@@ -46,6 +46,8 @@ class Foo
                 // do something
             }
         } while ($x < 0);
+
+        return true;
     }
 }
 
