@@ -7,13 +7,7 @@ use Acme\AnotherBar;
 
 class Foo
 {
-    /**
-     * @var
-     */
     public $x;
-    /**
-     * @var
-     */
     public $y;
 
     public function foo()
