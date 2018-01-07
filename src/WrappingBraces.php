@@ -4,8 +4,6 @@ namespace A {
 
     function foo()
     {
-
-
         return 0;
     }
 
@@ -108,48 +106,6 @@ namespace A {
             return $result;
         }
 
-        public static function fOne(
-            $argA,
-            $argB,
-            $argC,
-            $argD,
-            $argE,
-            $argF,
-            $argG,
-            $argH
-        ) {
-            $x = $argA + $argB + $argC + $argD + $argE + $argF + $argG + $argH;
-            list($field1, $field2, $field3, $filed4, $field5, $field6) = explode(
-                ",",
-                $x
-            );
-            fTwo(
-                $argA,
-                $argB,
-                $argC,
-                fThree(
-                    $argD,
-                    $argE,
-                    $argF,
-                    $argG,
-                    $argH
-                )
-            );
-            $z = $argA == "Some string" ? "yes" : "no";
-            $colors = array(
-                "red",
-                "green",
-                "blue",
-                "black",
-                "white",
-                "gray"
-            );
-            $count = count($colors);
-            for ($i = 0; $i < $count; $i++) {
-                $colorString = $colors[$i];
-            }
-        }
-
         public function fTwo(
             $strA,
             $strB,
@@ -192,5 +148,47 @@ namespace A {
 
         abstract protected function fFour(
         );
+
+        public static function fOne(
+            $argA,
+            $argB,
+            $argC,
+            $argD,
+            $argE,
+            $argF,
+            $argG,
+            $argH
+        ) {
+            $x = $argA + $argB + $argC + $argD + $argE + $argF + $argG + $argH;
+            list($field1, $field2, $field3, $filed4, $field5, $field6) = explode(
+                ",",
+                $x
+            );
+            fTwo(
+                $argA,
+                $argB,
+                $argC,
+                fThree(
+                    $argD,
+                    $argE,
+                    $argF,
+                    $argG,
+                    $argH
+                )
+            );
+            $z = $argA == "Some string" ? "yes" : "no";
+            $colors = array(
+                "red",
+                "green",
+                "blue",
+                "black",
+                "white",
+                "gray"
+            );
+            $count = count($colors);
+            for ($i = 0; $i < $count; $i++) {
+                $colorString = $colors[$i];
+            }
+        }
     }
 }
