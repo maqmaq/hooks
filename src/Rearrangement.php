@@ -11,12 +11,12 @@ class Rearrangement
 
     public static $publicStaticProperty;
 
-    public $publicField;
-
     protected static $protectedStaticProperty;
-    protected $protectedField;
 
     private static $privateStaticProperty;
+
+    public $publicField;
+    protected $protectedField;
     private $privateField;
 
     /**
@@ -37,20 +37,20 @@ class Rearrangement
     public static function publicStaticFunction()
     {
     }
+    
+    protected static function protectedStaticFunction()
+    {
+    }
+
+    private static function privateStaticFunction()
+    {
+    }
 
     public function publicFunction()
     {
     }
 
-    protected static function protectedStaticFunction()
-    {
-    }
-
     protected function protectedFunction()
-    {
-    }
-
-    private static function privateStaticFunction()
     {
     }
 
