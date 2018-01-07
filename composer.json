@@ -7,7 +7,6 @@
         }
     ],
     "require": {
-        "brainmaestro/composer-git-hooks": "^2.4"
     },
     "extra": {
         "hooks": {
@@ -16,6 +15,7 @@
     },
     "bin": ["bin"],
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.9"
+        "friendsofphp/php-cs-fixer": "^2.9",
+        "brainmaestro/composer-git-hooks": "^2.4"
     }
 }

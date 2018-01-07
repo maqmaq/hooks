@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 class Foo
 {
+
+    
     function foo($x, $z, $y, $val, $num, $cell, $a)
     {
         global $k, $s1;
