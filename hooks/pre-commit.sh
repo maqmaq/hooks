@@ -1,7 +1,7 @@
 #!/bin/bash
 while read -r file;
 do
-fixer_path = 'vendor/bin/php-cs-fixer'
+fixer_path='vendor/bin/php-cs-fixer'
 if ! [[ -x $fixer_path ]]; then
         echo "ERROR Fixer is not executable, please run composer"
         exit 2
