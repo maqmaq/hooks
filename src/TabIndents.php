@@ -7,7 +7,7 @@ function foo()
 
 
 
-    
+
     return
         "string";
 }
