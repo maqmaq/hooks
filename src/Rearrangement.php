@@ -16,7 +16,7 @@ class Rearrangement
      */
     public function __construct()
     {
-        
+
     }
 
     public static function publicStaticFunction() {

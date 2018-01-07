@@ -2,7 +2,6 @@
 return PhpCsFixer\Config::create()
     ->setRules([
         '@PSR2' => true,
-        'verbose' => true,
         'ordered_class_elements' => [
             'order' =>
                 [
@@ -29,14 +28,14 @@ return PhpCsFixer\Config::create()
                 ]
         ],
         'blank_line_before_statement' => [
-        'statements' => [
-        "break",
-         "continue",
-          "declare",
-           "return",
-            "throw",
-             "try"
-             ]
+            'statements' => [
+                "break",
+                "continue",
+                "declare",
+                "return",
+                "throw",
+                "try"
+            ]
         ],
         'no_extra_consecutive_blank_lines' => ["extra"],
     ]);
