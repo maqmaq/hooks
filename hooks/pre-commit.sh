@@ -9,7 +9,7 @@ fi
   file=${file}
   if [[ $file = *.php ]];
   then
-    $fixer_path fix "$file" --config=.php_cs.dist.php
+    $fixer_path fix "$file" --config=.php_cs.dist.php --verbose
     git add "$file"
   fi
 done < <(git diff --name-only --cached --diff-filter=ACMRTUXB)
