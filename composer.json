@@ -3,19 +3,20 @@
     "authors": [
         {
             "name": "mmackowski",
-            "email": "maciej.mackowski@wakacje.pl"
+            "email": "mmackowski@stop.spam"
         }
     ],
-    "require": {
-    },
     "extra": {
         "hooks": {
             "pre-commit": "bash hooks/pre-commit.sh"
         }
     },
-    "bin": ["bin"],
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.9",
         "brainmaestro/composer-git-hooks": "^2.4"
+    },
+    "scripts": {
+        "post-install-cmd": "vendor/bin/cghooks add --ignore-lock",
+        "post-update-cmd": "vendor/bin/cghooks update"
     }
 }
