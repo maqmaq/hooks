@@ -25,6 +25,13 @@ return PhpCsFixer\Config::create()
                     "method_private_static"
                 ]
         ],
-        'blank_line_before_statement' => ["break", "continue", "declare", "return", "throw", "try"],
+        'blank_line_before_statement' => [
+        "break" => true,
+         "continue" => true,
+          "declare" => true,
+           "return" => true,
+            "throw" => true,
+             "try" => true
+        ],
         'no_extra_consecutive_blank_lines' => ["extra"],
     ]);
