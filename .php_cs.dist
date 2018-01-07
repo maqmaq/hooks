@@ -2,6 +2,7 @@
 return PhpCsFixer\Config::create()
     ->setRules([
         '@PSR2' => true,
+        'verbose' => true,
         'ordered_class_elements' => [
             'order' =>
                 [
