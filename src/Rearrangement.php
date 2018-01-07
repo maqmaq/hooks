@@ -5,7 +5,6 @@ class Rearrangement
 {
     use SomeTrait;
     public const PUBLIC_CONST = 1;
-
     protected const PROTECTED_CONST = 2;
     private const PRIVATE_CONST = 3;
 
@@ -14,9 +13,17 @@ class Rearrangement
     protected static $protectedStaticProperty;
 
     private static $privateStaticProperty;
-
+    /**
+     * @var
+     */
     public $publicField;
+    /**
+     * @var
+     */
     protected $protectedField;
+    /**
+     * @var
+     */
     private $privateField;
 
     /**
