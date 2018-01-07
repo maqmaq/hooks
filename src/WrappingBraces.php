@@ -4,7 +4,9 @@ namespace A {
 
     function foo()
     {
-        return 0;
+
+
+        
     }
 
     function bar(
@@ -80,75 +82,6 @@ namespace A {
         public $v = 0;
         public $path = "root";
 
-        public function bar(
-            $v,
-            $w = "a"
-        ) {
-            $y = $w;
-            $result = foo(
-                "arg1",
-                "arg2",
-                10
-            );
-            switch ($v) {
-                case 0:
-                    return 1;
-                case 1:
-                    echo '1';
-
-                    break;
-                case 2:
-                    break;
-                default:
-                    $result = 10;
-            }
-
-            return $result;
-        }
-
-        public function fTwo(
-            $strA,
-            $strB,
-            $strC,
-
-            $strD
-        ) {
-            if ($strA == "one" || $strB == "two" || $strC == "three") {
-                return $strA + $strB + $strC;
-            }
-            $x = $foo->one(
-                "a",
-                "b"
-            )->two(
-                    "c",
-                    "d",
-                "e"
-                )->three("fg")->four();
-            $y = a()->b()->c();
-
-            return $strD;
-        }
-
-        public function fThree(
-            $strA,
-            $strB,
-            $strC,
-            $strD,
-            $strE
-        ) {
-            try {
-            } catch (Exception $e) {
-                foo();
-            } finally {
-                // do something
-            }
-
-            return $strA + $strB + $strC + $strD + $strE;
-        }
-
-        abstract protected function fFour(
-        );
-
         public static function fOne(
             $argA,
             $argB,
@@ -190,5 +123,73 @@ namespace A {
                 $colorString = $colors[$i];
             }
         }
+
+        public function bar(
+            $v,
+            $w = "a"
+        ) {
+            $y = $w;
+            $result = foo(
+                "arg1",
+                "arg2",
+                10
+            );
+            switch ($v) {
+                case 0:
+                    return 1;
+                case 1:
+                    echo '1';
+
+                    break;
+                case 2:
+                    break;
+                default:
+                    $result = 10;
+            }
+
+            return $result;
+        }
+
+        public function fTwo(
+            $strA,
+            $strB,
+            $strC,
+
+            $strD
+        ) {
+            if ($strA == "one" || $strB == "two" || $strC == "three") {
+                return $strA + $strB + $strC;
+            }
+            $x = $foo->one(
+                "a",
+                "b"
+            )->two(
+                "c",
+                "d",
+                "e"
+            )->three("fg")->four();
+            $y = a()->b()->c();
+
+            return $strD;
+        }
+
+        public function fThree(
+            $strA,
+            $strB,
+            $strC,
+            $strD,
+            $strE
+        ) {
+            try {
+            } catch (Exception $e) {
+                foo();
+            } finally {
+                // do something
+            }
+
+            return $strA + $strB + $strC + $strD + $strE;
+        }
+
+        abstract protected function fFour();
     }
 }

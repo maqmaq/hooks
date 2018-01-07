@@ -17,12 +17,12 @@ return PhpCsFixer\Config::create()
                     "destruct",
                     "magic",
                     "phpunit",
-                    "method_public",
-                    "method_protected",
-                    "method_private",
                     "method_public_static",
+                    "method_public",
                     "method_protected_static",
+                    "method_protected",
                     "method_private_static"
+                    "method_private",
                 ]
         ],
         'blank_line_before_statement' => [
