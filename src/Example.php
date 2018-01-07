@@ -3,9 +3,7 @@ declare(strict_types=1);
 
 class Foo
 {
-
-    
-    function foo($x, $z, $y, $val, $num, $cell, $a)
+    public function foo($x, $z, $y, $val, $num, $cell, $a)
     {
         global $k, $s1;
         $arr = array(0 => "zero", 1 => "one");
@@ -33,9 +31,11 @@ class Foo
                 switch ($j) {
                     case 0:
                         $s1 = 'zero';
+
                         break;
                     case 2:
                         $s1 = 'two';
+
                         break;
                     default:
                         $s1 = 'other';
@@ -52,5 +52,3 @@ class Foo
 function bar(): Foo
 {
 }
-
-?>
