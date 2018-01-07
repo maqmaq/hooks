@@ -3,11 +3,12 @@ declare(strict_types=1);
 
 class Foo
 {
-    public function foo($x, $z, $y, $val, $num, $cell, $a)
+    public function foo($x, $z)
     {
         global $k, $s1;
+        $obj->foo()->bar();
         $arr = array(0 => "zero", 1 => "one");
-        call_user_func(function () {
+        call_func(function () {
             return 0;
         });
         for ($i = 0; $i < $x; $i++) {
@@ -41,16 +42,17 @@ class Foo
                         $s1 = 'other';
                 }
             } catch (exception $e) {
-                echo $val{$num}[$cell{$a}];
+                echo $val{foo . $num}[$cell{$a}];
             } finally {
                 // do something
             }
         } while ($x < 0);
-
-        return true;
     }
 }
 
 function bar(): Foo
 {
 }
+
+?>
+<div><?= foo() ?></div>
