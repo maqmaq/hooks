@@ -66,6 +66,9 @@ namespace A {
 
     abstract class Foo extends FooBaseClass implements Bar1, Bar2, Bar3
     {
+        const FIRST = 'first';
+        const SECOND = 0;
+        const Z = -1;
         public $numbers = array(
             "one",
             "two",
@@ -76,10 +79,6 @@ namespace A {
         );
         public $v = 0;
         public $path = "root";
-
-        const FIRST = 'first';
-        const SECOND = 0;
-        const Z = -1;
 
         public function bar(
             $v,
