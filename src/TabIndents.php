@@ -5,16 +5,6 @@ function foo()
         echo "bar";
     }
 
-
-
-
-
-
-
-
-    
-
-
     return
         "string";
 }
